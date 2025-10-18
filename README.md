@@ -1,15 +1,23 @@
-# Accessible Profile Card
+# Accessible Profile Card (HNG13 Task)
 
-An accessible, responsive Profile Card built with semantic HTML, modern CSS, and vanilla JavaScript.
+An accessible, responsive **Profile Card** built with **semantic HTML**, **modern CSS**, and **vanilla JavaScript** — featuring a **Dark/Light mode toggle**, and dynamic **real-time updates**.
 
-## 🧩 Live Demo
+---
 
-[Live on Netlify](https://your-live-demo.netlify.app)
+##  Live Demo
+🔗 [View on Netlify](https://profile-card-glory-im.netlify.app)
+
+---
 
 ## 💻 Run Locally
 
 ```bash
+# Clone the repo
 git clone https://github.com/Glorypaul-pixel/profile-card-HNG13
-cd profile-card
+
+# Navigate into the project directory
+cd profile-card-HNG13
+
+# Open the project in your browser
 open index.html
-```
+
