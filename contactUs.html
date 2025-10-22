@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="nav-brand">MyProfile</div>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+          ☰
+        </button>
+
+        <div class="nav-links" id="navLinks">
+          <a href="index.html">Home</a>
+          <a href="aboutUs.html">About Me</a>
+          <a href="contactUs.html">Contact Us</a>
+          <button id="themeToggle" aria-label="Toggle theme">🌙</button>
+        </div>
+      </nav>
+    </header>
+
+    <main data-testid="test-contact-page" class="contactUsPage">
+      <h1>Contact Us</h1>
+      <form id="contactForm" novalidate>
+        <div>
+          <label for="name">Full Name</label>
+          <input
+            type="text"
+            id="name"
+            data-testid="test-contact-name"
+            aria-describedby="test-contact-error-name"
+            required
+          />
+          <p id="test-contact-error-name" class="error" aria-live="polite"></p>
+        </div>
+
+        <div>
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            data-testid="test-contact-email"
+            aria-describedby="test-contact-error-email"
+            required
+          />
+          <p id="test-contact-error-email" class="error" aria-live="polite"></p>
+        </div>
+
+        <div>
+          <label for="subject">Subject</label>
+          <input
+            type="text"
+            id="subject"
+            data-testid="test-contact-subject"
+            aria-describedby="test-contact-error-subject"
+            required
+          />
+          <p
+            id="test-contact-error-subject"
+            class="error"
+            aria-live="polite"
+          ></p>
+        </div>
+
+        <div>
+          <label for="message">Message</label>
+          <textarea
+            id="message"
+            data-testid="test-contact-message"
+            aria-describedby="test-contact-error-message"
+            required
+          ></textarea>
+          <p
+            id="test-contact-error-message"
+            class="error"
+            aria-live="polite"
+          ></p>
+        </div>
+
+        <button type="submit" data-testid="test-contact-submit">Submit</button>
+
+        <p id="test-contact-success" class="success" aria-live="polite" hidden>
+          Thank you! Your message has been sent.
+        </p>
+      </form>
+    </main>
+    <script src="js/theme.js"></script>
+    <script src="js/validate.js"></script>
+  </body>
+</html>

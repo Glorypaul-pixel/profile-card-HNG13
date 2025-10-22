@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Me</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="nav-brand">MyProfile</div>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+          ☰
+        </button>
+
+        <div class="nav-links" id="navLinks">
+          <a href="index.html">Home</a>
+          <a href="aboutUs.html">About Me</a>
+          <a href="contactUs.html">Contact Us</a>
+          <button id="themeToggle" aria-label="Toggle theme">🌙</button>
+        </div>
+      </nav>
+    </header>
+
+    <main data-testid="test-about-page">
+      <h1>About Me</h1>
+
+      <section data-testid="test-about-bio">
+        <h2>My Bio</h2>
+        <p>
+          I’m a frontend enthusiast passionate about building clean, accessible,
+          and engaging web experiences.
+        </p>
+      </section>
+
+      <section data-testid="test-about-goals">
+        <h2>My Goals in This Program</h2>
+        <ul>
+          <li>Master semantic HTML and accessibility.</li>
+          <li>Learn React and modern frontend workflows.</li>
+          <li>Build portfolio-worthy projects.</li>
+        </ul>
+      </section>
+
+      <section data-testid="test-about-confidence">
+        <h2>Areas I Feel Less Confident In</h2>
+        <p>
+          JavaScript optimization and complex state management—but I’m improving
+          daily!
+        </p>
+      </section>
+
+      <section data-testid="test-about-future-note">
+        <h2>Note to Future Me</h2>
+        <p>
+          Keep learning, stay humble, and always design with the user in mind.
+        </p>
+      </section>
+
+      <section data-testid="test-about-extra">
+        <h2>Extra Thoughts</h2>
+        <p>
+          This journey is challenging, but it’s exactly what I need to grow.
+        </p>
+      </section>
+    </main>
+    <script src="js/script.js"></script>
+    <script src="js/theme.js"></script>
+  </body>
+</html>
