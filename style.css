@@ -38,7 +38,7 @@ body {
 
 /* HEADER & NAVBAR STYLIMG*/
  header {
-  width: 100%;
+  width: 80%;
   background: var(--card-bg);
   box-shadow: var(--shadow);
   border-radius: 1rem;
@@ -312,7 +312,10 @@ main section {
   main[data-testid="test-about-page"] {
     padding: 1.5rem;
   }
+ header {
+  width: 100%;
 
+}
   .menu-toggle {
     display: block;
   }
